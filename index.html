@@ -7,6 +7,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/style.css" />
+
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <title>GPT 3</title>
   </head>
   <body>
@@ -15,16 +22,26 @@
       <nav>
         <span>GPT3</span>
       </nav>
-      <ul>
+      <ul id="navList">
         <li><a href="#">Home</a></li>
         <li><a href="#">What is GPT?</a></li>
         <li><a href="#">Open AI</a></li>
         <li><a href="#">Case Studies</a></li>
         <li><a href="#">Library</a></li>
+        <div class="navList_btns">
+          <button type="button">Sign in</button>
+          <button type="button">Sign up</button>
+        </div>
       </ul>
+
+      <!-- BUTTONS & ICONS SECTION -->
       <div class="nav_btns">
         <button type="button">Sign in</button>
         <button type="button">Sign up</button>
+        <div class="icons">
+          <i class="bx bx-menu"></i>
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
       </div>
     </header>
     <!-- HEADER SECTION -->
@@ -53,6 +70,74 @@
         </div>
       </section>
       <!-- /HOME SECTION -->
+
+      <!-- SPONSORS SECTION -->
+      <section class="sponsor_section">
+        <img src="./assets/google.png" alt="Google Logo" />
+        <img src="./assets/slack.png" alt="Slack Logo" />
+        <img src="./assets/atlassian.png" alt="Atlassian Logo" />
+        <img src="./assets/dropbox.png" alt="Google Logo" />
+        <img src="./assets/shopify.png" alt="Google Logo" />
+      </section>
+      <!-- SPONSORS SECTION -->
+
+      <section class="gpt-3_section">
+        <div class="gpt-3_details">
+          <!-- TITLE & LINE -->
+          <div class="gpt-3_heading">
+            <div class="gpt-3_line"></div>
+            <div class="gpt-3_heading_main">What is GPT-3</div>
+          </div>
+          <!-- PARAGRAPGH -->
+          <div class="gpt-3_para">
+            <p>
+              We so opinion friends me message as delight. Whole front do of
+              plate heard oh ought. His defective nor convinced residence own.
+              Connection has put impossible own apartments boisterous. At
+              jointure ladyship an insisted so humanity he. Friendly bachelor
+              entrance to on by.
+            </p>
+          </div>
+        </div>
+        <div class="gpt-3_mainHeading">
+          <h2>The possibilities are beyond your imagination</h2>
+          <span>Explore The Library</span>
+        </div>
+        <div class="gpt-3_boxes">
+          <div class="gpt-3_box">
+            <div class="gpt-3_heading">
+              <div class="gpt-3_line"></div>
+              <div class="gpt-3_heading_main">Chatbots</div>
+            </div>
+            <p class="gpt-3_box_details">
+              We so opinion friends me message as delight. Whole front do of
+              plate heard oh ought.
+            </p>
+          </div>
+          <div class="gpt-3_box">
+            <div class="gpt-3_heading">
+              <div class="gpt-3_line"></div>
+              <div class="gpt-3_heading_main">Knowledgebase</div>
+            </div>
+            <p class="gpt-3_box_details">
+              At jointure ladyship an insisted so humanity he. Friendly bachelor
+              entrance to on by. As put impossible own apartments b
+            </p>
+          </div>
+          <div class="gpt-3_box">
+            <div class="gpt-3_heading">
+              <div class="gpt-3_line"></div>
+              <div class="gpt-3_heading_main">Education</div>
+            </div>
+            <p class="gpt-3_box_details">
+              At jointure ladyship an insisted so humanity he. Friendly bachelor
+              entrance to on by. As put impossible own apartments b
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- ADD JAVASCRIPT -->
+    <script src="./main.js"></script>
   </body>
 </html>

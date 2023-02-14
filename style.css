@@ -26,7 +26,8 @@ a {
 
 body {
   font-family: "Manrope", sans-serif;
-  background: #002853;
+  /* background: #002853; */
+  background: #040c18;
   color: #fff;
 }
 
@@ -54,6 +55,14 @@ header ul > li {
   cursor: pointer;
 }
 
+#navList .navList_btns button:nth-child(2) {
+  display: none;
+}
+
+#navList .navList_btns button:nth-child(1) {
+  display: none;
+}
+
 .nav_btns button:nth-child(1),
 .nav_btns button:nth-child(2) {
   padding: var(--btn_pd);
@@ -73,6 +82,10 @@ header ul > li {
   border-radius: 4px;
   color: #fff;
   margin-right: 0.5rem;
+}
+
+.nav_btns .icons {
+  display: none;
 }
 /* HEADER */
 
@@ -167,3 +180,229 @@ main .home_section .home_section_details .home_section_cta p {
   font-size: 80%;
 }
 
+/* HEADER & MAIN  */
+/* MEDIA QUERIES */
+@media (min-width: 200px) and (max-width: 375px) {
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+  body {
+    position: relative;
+  }
+
+  header {
+    padding: 1.8rem 2.5rem;
+  }
+
+  .nav_btns > button {
+    display: none;
+  }
+
+  .nav_btns .icons {
+    display: block;
+    font-size: 35px;
+  }
+
+  .nav_btns .icons .bx-menu,
+  .nav_btns .icons .bx-menu-alt-right {
+    cursor: pointer;
+  }
+
+  header > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 60vh;
+    position: absolute;
+    background-color: #3d6184f9;
+    top: 9%;
+    right: -100%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .icons .bx-menu-alt-right {
+    display: none;
+  }
+
+  #navList.active {
+    right: 5%;
+  }
+
+  #navList .navList_btns button:nth-child(2) {
+    font-size: inherit;
+    cursor: pointer;
+    background-color: #ff4820;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 0.5rem;
+    padding: 1rem 2rem;
+  }
+
+  #navList .navList_btns button:nth-child(1) {
+    font-size: inherit;
+    background-color: transparent;
+    border: 1px solid #ff4820;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 0.5rem;
+    padding: 1rem 2rem;
+  }
+
+  main {
+    padding: 0.1rem 2rem;
+  }
+
+  main .home_section {
+    flex-direction: column;
+  }
+
+  main .home_section .home_section_details h1 {
+    font-size: 46px;
+    width: 100%;
+  }
+
+  main .home_section .home_section_details p {
+    width: 100%;
+  }
+
+  main .home_section .home_section_details .home_section_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main .home_section .home_section_details .home_section_form input {
+    width: 100%;
+  }
+
+  main .home_section .home_section_details .home_section_cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  main .home_section .home_section_details .home_section_cta img {
+    width: 80%;
+  }
+
+  main .home_section .home_section_details .home_section_cta p {
+    width: 100%;
+    margin: auto;
+    padding-left: 1.3rem;
+  }
+
+  main .home_section .home_section_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 820px) {
+}
+/* HEADER & MAIN  */
+
+/* SPONSOR SECTION */
+.sponsor_section {
+  padding: 2.8rem 4.8rem;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.sponsor_section img {
+  width: 100px;
+  height: 30px;
+}
+/* /SPONSOR SECTION */
+
+/* GPT-3 SECTION */
+.gpt-3_section {
+  background: #002853;
+  padding: 5rem 3.6rem;
+  margin-bottom: 7rem;
+}
+
+.gpt-3_details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10rem;
+  margin-bottom: 8rem;
+}
+
+.gpt-3_heading {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.gpt-3_details .gpt-3_heading,
+.gpt-3_details .gpt-3_para {
+  flex: 1;
+}
+
+.gpt-3_details .gpt-3_para {
+  flex-basis: 45%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #81afdd;
+}
+
+.gpt-3_heading .gpt-3_line {
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  height: 2px;
+  width: 15%;
+  margin-bottom: 0.5rem;
+}
+
+.gpt-3_mainHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.gpt-3_mainHeading h2 {
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  width: 472px;
+  font-weight: 800;
+  font-size: 34px;
+}
+
+.gpt-3_mainHeading span {
+  color: #ff8a71;
+}
+
+.gpt-3_boxes {
+  margin-top: 5rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.gpt-3_box {
+  flex: 1;
+  flex-basis: 33.3%;
+}
+
+.gpt-3_heading_main {
+  margin-bottom: 1.5rem;
+}
+
+.gpt-3_box_details {
+  font-size: 16px;
+  line-height: 25px;
+  color: #81afdd;
+}
+/* /GPT-3 SECTION */
